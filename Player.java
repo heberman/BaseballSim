@@ -17,5 +17,7 @@ public class Player {
         age = a;
         position = pos;
         team = t;
+        player_stats = new Stats();
+        player_skills = new Skills();
     }
 }
