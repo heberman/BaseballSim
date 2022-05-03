@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Random;
 
 public class Skills {
@@ -6,12 +8,26 @@ public class Skills {
     private int fielding_ability;
     private int clutch;
 
-    Random rand = new Random();
+    public Skills(int h, int p, int f) {
+        hitting_ability = h;
+        pitching_ability = p;
+        fielding_ability = f;
+        clutch = 50;
+    }
 
-    public Skills() {
-        hitting_ability = rand.nextInt(100);
-        pitching_ability = rand.nextInt(100);
-        fielding_ability = rand.nextInt(100);
-        clutch = rand.nextInt(100);
+    public int getHittingAbility() {
+        return hitting_ability;
+    }
+
+    public int getPitchingAbility() {
+        return pitching_ability;
+    }
+
+    public int getFieldingAbility() {
+        return fielding_ability;
+    }
+
+    public int getClutch() {
+        return clutch;
     }
 }
